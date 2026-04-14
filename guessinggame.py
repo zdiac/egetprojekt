@@ -18,15 +18,29 @@ def main():
         else:
             print("Invalid choice, try again")
 
+    attempts = 0
     while True:
+        
         guess = int(input("Guess a number: "))
-
+        attempts += 1
         if guess > secret_number:
             print("Too high!")
         elif guess < secret_number:
             print("Too low!")
         else:
             print("Correct!")
+            
+            if attempts <= 3:
+                print("Rank S - Incredible!")
+            elif attempts <= 6:
+                print("Rank A - Awesome!")
+            elif attempts <= 10:
+                print("Rank: B - Well done!")
+            elif attempts <= 15:
+                print("Rank C - You did okay.")
+            else:
+                print("Rank: D - Finally...")
+                
             break
 
 main()
