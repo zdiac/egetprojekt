@@ -1,7 +1,17 @@
 import random
 
 def main ():
-    secret_number = random.randint(1, 100)
+
+    difficulty = input("Choose difficulty (easy, medium, hard): ")
+    if difficulty == "easy":
+        secret_number = random.randint(1, 50)
+    elif difficulty == "medium":
+        secret_number = random.randint(1, 100)
+    elif difficulty == "hard":
+        secret_number = random.randint(1, 500)
+    else:
+        print("Invalid difficulty, defaulting to medium.")
+        secret_number = random.randint(1, 100)
 
     while True:
         guess = int(input("Guess a number: "))
