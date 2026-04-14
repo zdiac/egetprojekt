@@ -37,7 +37,7 @@ def main():
             elif attempts <= 10:
                 print("Rank: B - Well done!")
             elif attempts <= 15:
-                print("Rank C - You did okay.")
+                print("Rank C - You did it.")
             else:
                 print("Rank: D - Finally...")
                 
