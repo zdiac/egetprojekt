@@ -2,7 +2,7 @@ import random
 
 def main():
     while True:
-        difficulty = input("Choose difficulty (easy, medium, hard or quit): ")
+        difficulty = input("Choose difficulty by writing easy, medium, hard or quit to quit the game: ")
 
         if difficulty == "easy":
             secret_number = random.randint(1, 50)
