@@ -69,11 +69,11 @@ def main():
 """)
 
                 print("Rank S - Incredible!")
-            elif attempts <= 6:
-                print("Rank A - Awesome!")
             elif attempts <= 10:
-                print("Rank: B - Well done!")
+                print("Rank A - Awesome!")
             elif attempts <= 15:
+                print("Rank: B - Well done!")
+            elif attempts <= 20:
                 print("Rank C - You did it.")
             else:
                 print("Rank: D - Finally...")
