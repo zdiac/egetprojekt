@@ -30,7 +30,7 @@ def main():
         else:
             print("Correct!")
             
-            if attempts <= 3:
+            if attempts <= 6:
                 #EASTER EGG IF U GET S RATING
                 print(r"""
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
